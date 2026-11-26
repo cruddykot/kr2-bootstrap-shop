@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты – Bootstrap Shop</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-light">
+
+  <!-- NAVBAR (копия с других страниц, active на contacts не ставим) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Bootstrap Shop</a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+              aria-controls="mainNavbar" aria-expanded="false"
+              aria-label="Переключить навигацию">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">Дополнительно</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="catalog.html">Все товары</a></li>
+              <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
+              <li><a class="dropdown-item" href="index.html#popular">Популярное</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="alert alert-info" role="alert">
+      Контакты учебного магазина. Это дополнительная страница проекта.
+    </div>
+
+    <h1 class="h2 mb-4">Контакты</h1>
+
+    <!-- Tabs — дополнительный компонент Bootstrap -->
+    <ul class="nav nav-tabs" id="contactTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="office-tab" data-bs-toggle="tab"
+                data-bs-target="#office" type="button" role="tab"
+                aria-controls="office" aria-selected="true">Офис</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="delivery-tab" data-bs-toggle="tab"
+                data-bs-target="#delivery" type="button" role="tab"
+                aria-controls="delivery" aria-selected="false">Доставка</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="support-tab" data-bs-toggle="tab"
+                data-bs-target="#support" type="button" role="tab"
+                aria-controls="support" aria-selected="false">Поддержка</button>
+      </li>
+    </ul>
+
+    <div class="tab-content border border-top-0 rounded-bottom p-4 bg-white" id="contactTabsContent">
+      <div class="tab-pane fade show active" id="office" role="tabpanel" aria-labelledby="office-tab">
+        <h2 class="h5">Офис</h2>
+        <p class="mb-0 text-muted">г. Москва, ул. Учебная, д. 1. Пн–Пт, 10:00–19:00.</p>
+      </div>
+      <div class="tab-pane fade" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">
+        <h2 class="h5">Доставка</h2>
+        <p class="mb-0 text-muted">Доставка по России курьерской службой. Срок — 2–5 дней.</p>
+      </div>
+      <div class="tab-pane fade" id="support" role="tabpanel" aria-labelledby="support-tab">
+        <h2 class="h5">Поддержка</h2>
+        <p class="mb-0 text-muted">E-mail: support@example.com. Телефон: +7 900 000-00-00.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <p class="mb-0">© 2026 Bootstrap Shop. Учебный проект КР №2.</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end mt-2 mt-md-0">
+          <a class="text-white text-decoration-none" href="index.html">Главная</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
